@@ -1,0 +1,106 @@
+body{
+	margin: 0;
+	overflow: hidden;
+}
+
+img {
+	position: relative;
+	height: 150px;
+	top: 33%;
+	left: 38%;
+}
+
+
+
+/*backgrounds*/
+.vk{
+	background: #507299;
+}
+.fb{
+	background: #47639E;
+}
+.ig{
+	background: linear-gradient(49deg, #f9ed32 0%,#ee2a7b 60%,#ee2a7b 73%,#1e69de 100%);
+}
+.tg{
+	background: #1F96D4;
+}
+
+/*grid*/
+.logo{
+	width: 50vw;
+	height: 50vh;
+	float: left;
+}
+
+/*desktop*/
+@media screen and (max-width: 1200px){
+	
+	img{
+		position: relative;
+		height: 100px;
+		top: 20%;
+		left: 46%;
+	}
+
+	.logo{
+		width: 100vw;
+		height: 25vh;
+		float: left;
+	}
+}
+
+/*resize desktop*/
+@media screen and (max-width: 1000px){
+	
+	img{
+		position: relative;
+		height: 100px;
+		top: 20%;
+		left: 40%;
+	}
+
+	.logo{
+		width: 100vw;
+		height: 25vh;
+		float: left;
+	}
+}
+
+/*tablet*/
+@media screen and (max-width: 768px){
+	
+	img{
+		position: relative;
+		height: 100px;
+		top: 20%;
+		left: 40%;
+	}
+
+	.logo{
+		width: 100vw;
+		height: 25vh;
+		float: left;
+	}
+}
+
+/*mobile*/
+@media screen and (max-width: 374px){
+	
+	body{
+		overflow: auto;
+	}
+
+	img{
+		position: relative;
+		height: 150px;
+		top: 28%;
+		left: 28%;
+	}
+
+	.logo{
+		width: 100vw;
+		height: 50vh;
+		float: left;
+	}
+}
