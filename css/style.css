@@ -38,25 +38,8 @@ img {
 	
 	img{
 		position: relative;
-		height: 100px;
-		top: 20%;
-		left: 46%;
-	}
-
-	.logo{
-		width: 100vw;
-		height: 25vh;
-		float: left;
-	}
-}
-
-/*resize desktop*/
-@media screen and (max-width: 1000px){
-	
-	img{
-		position: relative;
-		height: 100px;
-		top: 20%;
+		height: 200px;
+		top: 25%;
 		left: 40%;
 	}
 
@@ -67,40 +50,3 @@ img {
 	}
 }
 
-/*tablet*/
-@media screen and (max-width: 768px){
-	
-	img{
-		position: relative;
-		height: 100px;
-		top: 20%;
-		left: 40%;
-	}
-
-	.logo{
-		width: 100vw;
-		height: 25vh;
-		float: left;
-	}
-}
-
-/*mobile*/
-@media screen and (max-width: 374px){
-	
-	body{
-		overflow: auto;
-	}
-
-	img{
-		position: relative;
-		height: 150px;
-		top: 28%;
-		left: 28%;
-	}
-
-	.logo{
-		width: 100vw;
-		height: 50vh;
-		float: left;
-	}
-}
