@@ -1,2 +1,3 @@
-# andrey.oshev
-Social card 
+Social card  
+
+my gift for Andrey Oshev ^_^
