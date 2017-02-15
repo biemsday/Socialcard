@@ -3,141 +3,53 @@
 html, body{
 	margin: 0;
 	text-align: center;
-	background: white;
-	width: 100%;
-	height: 100%;
+	background: #FFFDFC;
+	overflow: hidden;
 }
 
-h1, h2, h3, p{
-	padding: 0;
-	margin: 0;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 300;
-}
-
-.title{
-	padding-top: 2%;
+body{
+	height: 100vh;
 }
 
 /*Main grid*/
+.block{
+	position: relative;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-top: 15vh;
+}
+
 .logo {
- display:inline-block;
- padding: 10%;
+	display:inline-block;
+	padding: 10%;
 }
 
 .logo img {
- width: 50px;
- display: block;
- opacity: 0.5;
- transition-duration: 1s;
+	width: 50px;
+	display: block;
+	opacity: 0.5;
+	transition-duration: 1s;
 }
 
 .logo img:hover{
 	opacity: 1;
 }
 
-
-
-/*Gradient title*/
-.hue{
-    background-image: -webkit-linear-gradient(100deg,#CCCCCC,#99CC99);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 6s infinite linear;
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
-}
-
-
-/*Mobile_version*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 567px){
-	
-	html, body{
-	overflow: hidden;
-	}
-
-	h1, h2, h3, p{
+@media screen and (max-device-width:414px) {
+	.block{
+	position: relative;
 	padding: 0;
-	margin: 0;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 300;
-	}
-
-	h1{
-		font-size: 8em;
-	}
-
-	h3{
-		font-size: 6em;
+	margin-top: 5vh;
 	}
 
 	.logo {
- 	display:inline-block;
- 	padding-left: 10%;
- 	padding-right: 10%;
- 	padding-top: 7%;
- 	padding-bottom: 7%;
-	}
-
-	.block{
-	padding-top: 5%;
-	padding-bottom: 10%;
+	display:inline-block;
 	}
 
 	.logo img {
-	 width: 150px;
-	 display: block;
-	 opacity: 0.5;
+	width: 200px;
+	display: block;
+	opacity: 0.5;
+	transition-duration: 1s;
 	}
-
-}
-
-/*Tablet_version*/
-@media only screen and (min-device-width : 568px) and (max-device-width : 900px){
-	
-	html, body{
-	overflow: hidden;
-	}
-
-	h1, h2, h3, p{
-	padding: 0;
-	margin: 0;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 300;
-	}
-
-	h1{
-		font-size: 3em;
-	}
-
-	h3{
-		font-size: 1em;
-	}
-
-	.logo {
- 	display:inline-block;
- 	padding-left: 10%;
- 	padding-right: 10%;
- 	padding-top: 5%;
- 	padding-bottom: 5%;
-	}
-
-	.block{
-	padding-top: 1%;
-	padding-bottom: 10%;
-	}
-
-	.logo img {
-	 width: 50px;
-	 display: block;
-	 opacity: 0.5;
-	}
-
 }
