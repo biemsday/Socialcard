@@ -36,6 +36,10 @@ body{
 }
 
 @media screen and (max-device-width:414px) {
+	body{
+		overflow: hidden;
+	}
+
 	.block{
 	position: relative;
 	padding: 0;
