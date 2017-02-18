@@ -1,3 +1,3 @@
 Social card  
 
-my gift for Andrey Oshev ^_^
+Статичная страница с сылками на соц сети.
