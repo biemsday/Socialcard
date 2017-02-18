@@ -30,8 +30,8 @@ body{
 	display: block;
 	opacity: 0.6;
 	transition-duration: 0.5s;
-	filter: drop-shadow(-1.7px -1.7px #004E5A) 		/*shadow_up*/
-			drop-shadow(0px 1.7px 0px #00798C);  	/*shadow_down*/
+	filter: drop-shadow(-1px -1px #002D34) 		/*shadow_up*/
+			drop-shadow(0px 1px 0px #008FA6);  	/*shadow_down*/
 
 }
 
@@ -40,7 +40,7 @@ body{
 }
 
 /*Mobile*/
-@media screen and (max-device-width:414px) {
+@media screen and (max-device-width:567px) {
 	body{
 		overflow: hidden;
 	}
@@ -61,7 +61,7 @@ body{
 	display: block;
 	opacity: 0.5;
 	transition-duration: 1s;
-	filter: drop-shadow(-3.5px -3.5px #004E5A) 		/*shadow_up*/
-			drop-shadow(0px 3.5px 0px #00798C);  	/*shadow_down*/
+	filter: drop-shadow(-3px -3px #002D34) 		/*shadow_up*/
+			drop-shadow(0px 3px 0px #008FA6);  	/*shadow_down*/
 	}
 }
