@@ -57,25 +57,28 @@ body{
 
 	.block{
 		position: relative;
-		margin-top: 5%;
-		margin-bottom: 5%;
+		margin-top: 50vh;
+		top: -468px;
 		margin-left: 0;
 		margin-right: 0;
 	}
 
 	.logo {
-		padding: 50px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		padding-left: 90px;
+		padding-right: 90px;
 		display:inline-block;
 	}
 
 	.logo img {
-		width: 150px;
-		height: 150px;
+		width: 70px;
+		height: 70px;
 		display: block;
 		opacity: 0.5;
 		transition-duration: 1s;
-		filter: drop-shadow(-3px -3px #002D34) 		/*shadow_up*/
-				drop-shadow(0px 3px 0px #008FA6);  	/*shadow_down*/
+		filter: drop-shadow(-2px -2px #002D34) 		/*shadow_up*/
+				drop-shadow(0px 2px 0px #008FA6);  	/*shadow_down*/
 	}
 
 	.phone{
