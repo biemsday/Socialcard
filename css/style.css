@@ -13,6 +13,9 @@ body{
 	text-align: center;
 	background: #5296A5;
 	transition-duration: 1s;
+	-webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -moz-transition-duration: 1s;
 }
 
 /*Main grid*/
@@ -34,10 +37,6 @@ body{
 	height: 75px;
 	display: block;
 	opacity: 0.6;
-	transition-duration: 0.5s;
-	filter: drop-shadow(-1px -1px #002D34) 		/*shadow_up*/
-			drop-shadow(0px 1px 0px #008FA6);  	/*shadow_down*/
-
 }
 
 .logo img:hover{
