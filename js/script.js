@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+//delay
     
       $("a").on('click', function(e) {
          e.preventDefault();
@@ -11,7 +13,9 @@ $(document).ready(function(){
             window.open(href, '_blank');
           }, timeout);
          
-      });  
+      }); 
+
+//style changer      
 
     $(".vk").on({
             mouseenter: function(){
