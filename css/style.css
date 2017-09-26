@@ -30,7 +30,6 @@ body{
 	display:inline-block;
 	padding-left: 50px;
 	padding-right: 50px;
-		filter: drop-shadow(-2px -2px #002D34) 		/*shadow_up*/
 }
 
 .logo img{
