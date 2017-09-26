@@ -49,11 +49,40 @@ body{
 }
 
 /*Animation*/
-.vk, .fb, .ig, .tg, .gh, .tw, .gmail {
+.active, .active img {
+	opacity: 1;
+	filter: brightness(200%) grayscale(100%) contrast(50);
+}
+
+.active_tw {
+	opacity: 1;
+	filter: hue-rotate(15deg) brightness(200%);
+}
+
+.active_tw img {
+	opacity: 1;
+}
+
+.active_gmail {
+	filter: hue-rotate(170deg) brightness(200%);
+}
+
+.active_gmail img {
+	opacity: 1;
+}
+
+.active_phone, .active_phone img {
+	opacity: 1;
+	filter: brightness(100%) grayscale(100%) contrast(2);
+}
+
+.passive{
+	opacity: 0.5;
+	filter: brightness(100%) grayscale(100%) contrast(50);
 }
 
 /*Mobile*/
-@media screen and (max-device-width:600px) {
+@media screen and (max-device-width:640px) {
 	
 	html, body{
 		height: 100vh;
@@ -83,7 +112,6 @@ body{
 		display: block;
 		opacity: 0.5;
 		transition-duration: 1s;
-		filter: drop-shadow(-2px -2px #002D34) 		/*shadow_up*/
 	}
 
 	.phone{

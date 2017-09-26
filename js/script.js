@@ -1,123 +1,120 @@
 $(document).ready(function(){
     
+      $("a").on('click', function(e) {
+         e.preventDefault();
+         
+         var 
+            href = $(this).attr('href'),
+            timeout = 1000;
+            
+         setTimeout(function() {
+            window.open(href, '_blank');
+          }, timeout);
+         
+      });  
+
     $(".vk").on({
             mouseenter: function(){
                 $("body").css("background-color", "#507299");
-                $(".vk").css("filter", "brightness(200%) grayscale(100%) contrast(50)");
-                $(".fb, .ig, .tg, .gh, .tw, .gmail, .phone").css("opacity", "0.2");
-                $(".fb, .ig, .tg, .gh, .tw, .gmail, .phone").css("filter", "brightness(100%) grayscale(100%) contrast(50)");
+                $(".vk").addClass("active");
+                $(".fb, .ig, .tg, .gh, .tw, .gmail, .phone").addClass("passive")
 
             },  
             mouseleave: function(){
                 $("body").css("background-color", "#5296A5");
-                $(".vk").css("filter", "none");
-                $(".fb, .ig, .tg, .gh, .tw, .gmail, .phone").css("filter", "none");
-                $(".fb, .ig, .tg, .gh, .tw, .gmail, .phone").css("opacity", "1");
+                $(".vk").removeClass("active");
+                $(".fb, .ig, .tg, .gh, .tw, .gmail, .phone").removeClass("passive")
             } 
     });
 
     $(".fb").on({
             mouseenter: function(){
                 $("body").css("background-color", "#4267B2");
-                $(".fb").css("filter", "brightness(200%) grayscale(100%) contrast(50)");
-                $(".vk, .ig, .tg, .gh, .tw, .gmail, .phone").css("opacity", "0.2");
-                $(".vk, .ig, .tg, .gh, .tw, .gmail, .phone").css("filter", "brightness(100%) grayscale(100%) contrast(50)");
+                $(".fb").addClass("active");
+                $(".vk, .ig, .tg, .gh, .tw, .gmail, .phone").addClass("passive")
             },  
             mouseleave: function(){
                 $("body").css("background-color", "#5296A5");
-                $(".fb").css("filter", "none");
-                $(".vk, .ig, .tg, .gh, .tw, .gmail, .phone").css("filter", "none");
-                $(".vk, .ig, .tg, .gh, .tw, .gmail, .phone").css("opacity", "1");
+                $(".fb").removeClass("active");
+                $(".vk, .ig, .tg, .gh, .tw, .gmail, .phone").removeClass("passive")
             } 
     });
 
     $(".ig").on({
             mouseenter: function(){
                 $("body").css("background-color", "#FFFFFF");
-                $(".ig").css("filter", "brightness(100%) grayscale(100%) contrast(2)");
-                $(".vk, .fb, .tg, .gh, .tw, .gmail, .phone").css("opacity", "0.2");
-                $(".vk, .fb, .tg, .gh, .tw, .gmail, .phone").css("filter", "brightness(100%) grayscale(100%) contrast(50)");
+                $(".ig").addClass("active_phone");
+                $(".vk, .fb, .tg, .gh, .tw, .gmail, .phone").addClass("passive")
             },  
             mouseleave: function(){
                 $("body").css("background-color", "#5296A5");
-                $(".ig").css("filter", "none");
-                $(".vk, .fb, .tg, .gh, .tw, .gmail, .phone").css("filter", "none");
-                $(".vk, .fb, .tg, .gh, .tw, .gmail, .phone").css("opacity", "1");
+                $(".ig").removeClass("active_phone");
+                $(".vk, .fb, .tg, .gh, .tw, .gmail, .phone").removeClass("passive")
             } 
     });
 
     $(".tg").on({
             mouseenter: function(){
                 $("body").css("background-color", "#32AFED");
-                $(".tg").css("filter", "brightness(200%) grayscale(100%) contrast(50)");
-                $(".vk, .fb, .ig, .gh, .tw, .gmail, .phone").css("opacity", "0.2");
-                $(".vk, .fb, .ig, .gh, .tw, .gmail, .phone").css("filter", "brightness(100%) grayscale(100%) contrast(50)");
+                $(".tg").addClass("active");
+                $(".vk, .fb, .ig, .gh, .tw, .gmail, .phone").addClass("passive")
             },  
             mouseleave: function(){
                 $("body").css("background-color", "#5296A5");
-                $(".tg").css("filter", "none");
-                $(".vk, .fb, .ig, .gh, .tw, .gmail, .phone").css("filter", "none");
-                $(".vk, .fb, .ig, .gh, .tw, .gmail, .phone").css("opacity", "1");
+                $(".tg").removeClass("active");
+                $(".vk, .fb, .ig, .gh, .tw, .gmail, .phone").removeClass("passive")
             } 
     });
 
     $(".gh").on({
             mouseenter: function(){
                 $("body").css("background-color", "#24292E");
-                $(".gh").css("filter", "brightness(200%) grayscale(100%) contrast(50)");
-                $(".vk, .fb, .ig, .tg, .tw, .gmail, .phone").css("opacity", "0.2");
-                $(".vk, .fb, .ig, .tg, .tw, .gmail, .phone").css("filter", "brightness(100%) grayscale(100%) contrast(50)");
+                $(".gh").addClass("active");
+                $(".vk, .fb, .ig, .tg, .tw, .gmail, .phone").addClass("passive")
             },  
             mouseleave: function(){
                 $("body").css("background-color", "#5296A5");
-                $(".gh").css("filter", "none");
-                $(".vk, .fb, .ig, .tg, .tw, .gmail, .phone").css("filter", "none");
-                $(".vk, .fb, .ig, .tg, .tw, .gmail, .phone").css("opacity", "1");
+                $(".gh").removeClass("active");
+                $(".vk, .fb, .ig, .tg, .tw, .gmail, .phone").removeClass("passive")
             } 
     });
 
     $(".tw").on({
             mouseenter: function(){
                 $("body").css("background-color", "#FFFFFF");
-                $(".tw").css("filter", "hue-rotate(15deg) brightness(200%)");
-                $(".vk, .fb, .ig, .tg, .gh, .gmail, .phone").css("opacity", "0.2");
-                $(".vk, .fb, .ig, .tg, .gh, .gmail, .phone").css("filter", "brightness(100%) grayscale(100%) contrast(50)");
+                $(".tw").addClass("active_tw");
+                $(".vk, .fb, .ig, .tg, .gh, .gmail, .phone").addClass("passive")
             },  
             mouseleave: function(){
                 $("body").css("background-color", "#5296A5");
-                $(".tw").css("filter", "none");
-                $(".vk, .fb, .ig, .tg, .gh, .gmail, .phone").css("filter", "none");
-                $(".vk, .fb, .ig, .tg, .gh, .gmail, .phone").css("opacity", "1");
+                $(".tw").removeClass("active_tw");
+                $(".vk, .fb, .ig, .tg, .gh, .gmail, .phone").removeClass("passive")
             } 
     });
 
     $(".gmail").on({
             mouseenter: function(){
                 $("body").css("background-color", "#FFFFFF");
-                $(".gmail").css("filter", "hue-rotate(170deg) brightness(200%)");
-                $(".vk, .fb, .ig, .tg, .gh, .tw, .phone").css("opacity", "0.2");
-                $(".vk, .fb, .ig, .tg, .gh, .tw, .phone").css("filter", "brightness(100%) grayscale(100%) contrast(50)");
+                $(".gmail").addClass("active_gmail");
+                $(".vk, .fb, .ig, .tg, .gh, .tw, .phone").addClass("passive")
             },  
             mouseleave: function(){
                 $("body").css("background-color", "#5296A5");
-                $(".gmail").css("filter", "none");
-                $(".vk, .fb, .ig, .tg, .gh, .tw, .phone").css("filter", "none");
-                $(".vk, .fb, .ig, .tg, .gh, .tw, .phone").css("opacity", "1");
+                $(".gmail").removeClass("active_gmail");
+                $(".vk, .fb, .ig, .tg, .gh, .tw, .phone").removeClass("passive")
             } 
     });
 
-        $(".phone").on({
+    $(".phone").on({
             mouseenter: function(){
                 $("body").css("background-color", "#FFFFFF");
-                $(".phone").css("filter", "brightness(100%) grayscale(100%) contrast(2)");
-                $(".vk, .fb, .ig, .tg, .gh, .tw, .gmail").css("opacity", "0.2");
-                $(".vk, .fb, .ig, .tg, .gh, .tw, .gmail").css("filter", "brightness(100%) grayscale(100%) contrast(50)");
+                $(".phone").addClass("active_phone");
+                $(".vk, .fb, .ig, .tg, .gh, .tw, .gmail").addClass("passive")
             },  
             mouseleave: function(){
                 $("body").css("background-color", "#5296A5");
-                $(".phone").css("filter", "none");
-                $(".vk, .fb, .ig, .tg, .gh, .tw, .gmail").css("filter", "none");
-                $(".vk, .fb, .ig, .tg, .gh, .tw, .gmail").css("opacity", "1");
+                $(".phone").removeClass("active_phone");
+                $(".vk, .fb, .ig, .tg, .gh, .tw, .gmail").removeClass("passive")
             } 
     });
 
