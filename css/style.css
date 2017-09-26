@@ -4,7 +4,6 @@ html, body{
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	background: #5296A5;
 	overflow: hidden;
 }
 
@@ -12,6 +11,8 @@ body{
 	height: 100%;
 	width: 100%;
 	text-align: center;
+	background: #5296A5;
+	transition-duration: 1s;
 }
 
 /*Main grid*/
@@ -43,8 +44,14 @@ body{
 	opacity: 1;
 }
 
+/*Hide on PC*/
 .phone{
 	visibility: hidden;
+}
+
+/*Animation*/
+.vk, .fb, .ig, .tg, .gh, .tw, .gmail {
+	transition-delay: 0.05s;
 }
 
 /*Mobile*/
@@ -57,7 +64,7 @@ body{
 
 	.block{
 		position: relative;
-		margin-top: 50vh;
+		margin-top: 30vh;
 		margin-bottom: 50vh;
 		top: -25vh;
 		margin-left: 0;
