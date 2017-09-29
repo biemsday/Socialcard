@@ -42,39 +42,39 @@ body{
 }
 
 /*Hide on PC*/
-#phone{
+#logo.phone{
 	display: none;
 }
 
 /*Animation*/
-.active, .active img {
+#logo.active, #logo.active img {
 	opacity: 1;
 	filter: brightness(200%) grayscale(100%) contrast(50);
 }
 
-.active_tw {
+#logo.active_tw {
 	opacity: 1;
 	filter: hue-rotate(15deg) brightness(200%);
 }
 
-.active_tw img {
+#logo.active_tw img {
 	opacity: 1;
 }
 
-.active_gmail {
+#logo.active_gmail {
 	filter: hue-rotate(170deg) brightness(200%);
 }
 
-.active_gmail img {
+#logo.active_gmail img {
 	opacity: 1;
 }
 
-.active_phone, .active_phone img {
+#logo.active_phone, #logo.active_phone img {
 	opacity: 1;
 	filter: brightness(100%) grayscale(100%) contrast(2);
 }
 
-.passive{
+#logo.passive{
 	opacity: 0.5;
 	filter: brightness(100%) grayscale(100%) contrast(50);
 }
@@ -111,7 +111,7 @@ body{
 		margin: 0;
 	}
 
-	#phone{
+	#logo.phone{
 		display: inline-block;
 	}
 }
