@@ -15,7 +15,7 @@ $(document).ready(function(){
          
       }); 
 
-//style changer      
+//style changer   
 
     $(".vk").on({
             mouseenter: function(){
@@ -123,3 +123,4 @@ $(document).ready(function(){
     });
 
 });
+

@@ -17,32 +17,32 @@ body{
 }
 
 /*Main grid*/
-.block{
+#block{
 	width: 100%;
 	padding: 0;
 	margin-top: 50vh;
 	margin-bottom: 50vh;
 }
 
-.logo {
+#logo {
 	display:inline-block;
 	margin-top: -75px;
 	padding: 50px;
 }
 
-.logo img{
+#logo img{
 	width: 75px;
 	height: 75px;
 	display: block;
 	opacity: 0.6;
 }
 
-.logo img:hover{
+#logo img:hover{
 	opacity: 1;
 }
 
 /*Hide on PC*/
-.phone{
+#phone{
 	display: none;
 }
 
@@ -88,7 +88,7 @@ body{
 		vertical-align: middle;
 	}
 
-	.block{
+	#block{
 		position: relative;
 		top: 50%;
 		left: 50%;
@@ -98,12 +98,12 @@ body{
 		padding: 0;
 	}
 
-	.logo {
+	#logo{
 		margin: 0;
 		padding: 50px;
 	}
 
-	.logo img {
+	#logo img {
 		width: 125px;
 		height: 125px;
 		display: inline-block;
@@ -111,7 +111,7 @@ body{
 		margin: 0;
 	}
 
-	.phone{
+	#phone{
 		display: inline-block;
 	}
 }
